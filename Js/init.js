@@ -15,6 +15,7 @@ function init_tinymce(selector, language)
         language: language,
         toolbar: 'undo redo styleselect bold italic alignleft aligncenter alignright bullist numlist outdent indent code',
         plugins: 'code',
-        br_in_pre: false
+        br_in_pre: false,
+        height: '400px'
     });
 }
