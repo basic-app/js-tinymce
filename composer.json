@@ -7,6 +7,6 @@
         }
     },
     "require": {
-        "bower-asset/tinymce": "*"
+        "npm-asset/tinymce": "*"
     }
 }

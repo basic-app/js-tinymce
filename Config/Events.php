@@ -5,7 +5,7 @@ use BasicApp\Helpers\CliHelper;
 
 SystemEvents::onUpdate(function()
 {
-    $source = dirname(COMPOSER_PATH) . '/bower-asset/tinymce';
+    $source = dirname(COMPOSER_PATH) . '/npm-asset/tinymce';
 
     $target = FCPATH . 'js' . DIRECTORY_SEPARATOR . 'tinymce';
 
