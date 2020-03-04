@@ -37,7 +37,7 @@ abstract class BaseTinyMceForm extends \BasicApp\Config\BaseConfigForm
         'relative_urls'
     ];
 
-    protected $i18nCategory = 'config';
+    protected $languageCategory = 'config';
 
     public function renderForm($form, $data)
     {
