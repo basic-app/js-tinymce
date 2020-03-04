@@ -29,7 +29,7 @@ if (class_exists(AdminEvents::class))
 
         $event->items[$modelClass] = [
             'label' => t('admin.menu', 'TinyMCE'),
-            'icon' => 'fa fa-fw fa-editor',
+            'icon' => 'fa fa-fw fa-edit',
             'url' => Url::createUrl('admin/config', ['class' => $modelClass])
         ];
     });
