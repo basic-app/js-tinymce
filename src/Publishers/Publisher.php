@@ -27,7 +27,7 @@ class Publisher extends BasePublisher
 
     public function publish(): bool
     {
-        if (is_file($this->destination . DIRECTORY_SEPARATOR . 'tinymce.js'))
+        if ($this->destinationExists)
         {
             return true;
         }
