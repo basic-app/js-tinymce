@@ -5,22 +5,6 @@ use BasicApp\Helpers\CliHelper;
 use BasicApp\Admin\AdminEvents;
 use BasicApp\Helpers\Url;
 
-SystemEvents::onUpdate(function()
-{
-    $source = dirname(COMPOSER_PATH) . '/npm-asset/tinymce';
-
-    $target = FCPATH . 'js' . DIRECTORY_SEPARATOR . 'tinymce';
-
-    if (is_dir($target))
-    {
-        return;
-    }
-    
-    CliHelper::copy($source, $target);
-
-    CliHelper::copy(dirname(__DIR__) . '/init.js', $target . '/init.js');
-});
-
 if (class_exists(AdminEvents::class))
 {
     AdminEvents::onOptionsMenu(function($event)

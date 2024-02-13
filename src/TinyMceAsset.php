@@ -9,8 +9,6 @@ class TinyMceAsset extends \BasicApp\Core\Asset
     {
         $head .= app_view('BasicApp\Js\TinyMce\Views\head');
         
-        $beginBody .= app_view('BasicApp\Js\TinyMce\Views\begin-body');
-        
         $endBody .= app_view('BasicApp\Js\TinyMce\Views\end-body');
     }
 

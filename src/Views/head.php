@@ -1,11 +1,14 @@
 <?php
 
 use BasicApp\Js\TinyMce\Config\TinyMce;
-
 ?>
-<script type="text/javascript" src="<?= base_url('js/tinymce/tinymce.min.js');?>"></script>
-<script type="text/javascript" src="<?= base_url('js/tinymce/init.js');?>"></script>
+<script type="text/javascript" src="<?= base_url('assets/tinymce/tinymce.min.js');?>"></script>
 <script type="text/javascript">
+function init_tinymce(selector, language)
+{
+    tinymce.init(TINYMCE_CONFIG);
+}
+
 var TINYMCE_CONFIG = <?php
 
 $config = config(TinyMce::class);

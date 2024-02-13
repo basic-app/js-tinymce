@@ -5,8 +5,5 @@
         "psr-4": {
             "BasicApp\\Js\\TinyMce\\": "src"
         }
-    },
-    "require": {
-        "npm-asset/tinymce": "*"
-    }    
+    }
 }
