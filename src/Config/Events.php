@@ -4,10 +4,11 @@ use BasicApp\System\SystemEvents;
 use BasicApp\Helpers\CliHelper;
 use BasicApp\Admin\AdminEvents;
 use BasicApp\Helpers\Url;
+use BasicApp\AdminMenu\AdminMenuEvents;
 
-if (class_exists(AdminEvents::class))
+if (class_exists(AdminMenuEvents::class))
 {
-    AdminEvents::onOptionsMenu(function($event)
+    AdminMenuEvents::onOptionsMenu(function($event)
     {
         $modelClass = \BasicApp\Js\TinyMce\Forms\TinyMceForm::class;
 
