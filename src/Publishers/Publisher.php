@@ -27,11 +27,11 @@ class Publisher extends BasePublisher
 
     public function publish(): bool
     {
-        if ($this->destinationExists)
+        if (count(directory_map($this->destination)) > 0)
         {
             return true;
         }
-
+        
         return $this->downloadFile($this->url)
             ->extractZipArchive($this->getScratch() . 'tinymce_6.8.3_dev.zip')
             ->setSource($this->getScratch() . 'tinymce/js/tinymce')
